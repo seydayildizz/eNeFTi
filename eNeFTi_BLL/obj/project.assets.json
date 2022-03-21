@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "eNeFTi_DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "eNeFTi_EL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/eNeFTi_DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eNeFTi_DAL.dll": {}
+        }
+      },
+      "eNeFTi_EL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/eNeFTi_EL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eNeFTi_EL.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "eNeFTi_DAL/1.0.0": {
+      "type": "project",
+      "path": "../eNeFTi_DAL/eNeFTi_DAL.csproj",
+      "msbuildProject": "../eNeFTi_DAL/eNeFTi_DAL.csproj"
+    },
+    "eNeFTi_EL/1.0.0": {
+      "type": "project",
+      "path": "../eNeFTi_EL/eNeFTi_EL.csproj",
+      "msbuildProject": "../eNeFTi_EL/eNeFTi_EL.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "eNeFTi_DAL >= 1.0.0",
+      "eNeFTi_EL >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ŞeydaZenler\\.nuget\\packages\\": {},
@@ -38,7 +76,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ŞeydaZenler\\source\\repos\\eNeFTi\\eNeFTi_DAL\\eNeFTi_DAL.csproj": {
+              "projectPath": "C:\\Users\\ŞeydaZenler\\source\\repos\\eNeFTi\\eNeFTi_DAL\\eNeFTi_DAL.csproj"
+            },
+            "C:\\Users\\ŞeydaZenler\\source\\repos\\eNeFTi\\eNeFTi_EL\\eNeFTi_EL.csproj": {
+              "projectPath": "C:\\Users\\ŞeydaZenler\\source\\repos\\eNeFTi\\eNeFTi_EL\\eNeFTi_EL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
