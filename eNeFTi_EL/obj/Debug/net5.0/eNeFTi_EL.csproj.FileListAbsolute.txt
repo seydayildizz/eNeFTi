@@ -1,0 +1,15 @@
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\bin\Debug\net5.0\eNeFTi_EL.deps.json
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\bin\Debug\net5.0\eNeFTi_EL.runtimeconfig.json
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\bin\Debug\net5.0\eNeFTi_EL.runtimeconfig.dev.json
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\bin\Debug\net5.0\eNeFTi_EL.dll
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\bin\Debug\net5.0\ref\eNeFTi_EL.dll
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\bin\Debug\net5.0\eNeFTi_EL.pdb
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\obj\Debug\net5.0\eNeFTi_EL.csproj.AssemblyReference.cache
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\obj\Debug\net5.0\eNeFTi_EL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\obj\Debug\net5.0\eNeFTi_EL.AssemblyInfoInputs.cache
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\obj\Debug\net5.0\eNeFTi_EL.AssemblyInfo.cs
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\obj\Debug\net5.0\eNeFTi_EL.csproj.CoreCompileInputs.cache
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\obj\Debug\net5.0\eNeFTi_EL.dll
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\obj\Debug\net5.0\ref\eNeFTi_EL.dll
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\obj\Debug\net5.0\eNeFTi_EL.pdb
+C:\Users\ŞeydaZenler\source\repos\eNeFTi\eNeFTi_EL\obj\Debug\net5.0\eNeFTi_EL.genruntimeconfig.cache

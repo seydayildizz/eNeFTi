@@ -15,14 +15,15 @@ namespace eNeFTi_EL.Enums
         Bay,
         Bayan
     }
-    public enum TheIdentityRoles : byte
+    public enum RoleNames : byte
     {
         Passive = 0,
         Admin = 1,
         Customer = 2,
         Supplier = 3,
         Editor = 4,
-        Active = 5
+        Active = 5,
+        NonFungibleToken = 6
     }
 
 }
