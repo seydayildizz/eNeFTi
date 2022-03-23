@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace eNeFTi_EL.Models
 {
-    public class Base<T>
+    public class Base<T>:IBase
     {
         [Key]
         [Column(Order = 1)]

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace eNeFTi_EL.Models
 {
     [Table("Categories")]
-    public class Category /*: TheBase<int>*/
+    public class Category : Base<int>
     {
         [Required]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Kategori adının uzuluğu 2 ile 50 karakter arasında olmalıdır!")]
@@ -20,7 +20,7 @@ namespace eNeFTi_EL.Models
         public int? BaseCategoryId { get; set; }
         [ForeignKey("BaseCategoryId")]
         public virtual Category BaseCategory { get; set; }
-        //public virtual List<Product> ProductList { get; set; }
+        public virtual List<Product> ProductList { get; set; }
         public virtual List<Category> CategoryList { get; set; }
     }
 }

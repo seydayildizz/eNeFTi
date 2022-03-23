@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace eNeFTi_EL.Models
 {
     [Table("Products")]
-    public class Product /*: TheBase<int>*/
+    public class Product : Base<int>
     {
         [Required]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Ürün adı 2 ile 50 karakter aralığında olmalıdır!")]
@@ -18,9 +18,9 @@ namespace eNeFTi_EL.Models
         [StringLength(500, ErrorMessage = "Ürün açıklaması en fazla 500 karakter olmalıdır!")]
         public string Description { get; set; }
 
-        [StringLength(8, ErrorMessage = "Ürün kodu en fazla 8 karakter olmalıdır!")]
-        
-        public string ProductCode { get; set; }
+        [Required]
+        [StringLength(32, ErrorMessage = "Ürün kodu en fazla 32 karakter olmalıdır!")]
+        public string ProductCode { get; set; } = new Guid().ToString().Replace("-", "");
 
         [Required]
         [DataType(DataType.Currency)]

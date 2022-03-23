@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace eNeFTi_EL.Models
 {
     [Table("Orders")]
-    public class Order/* : TheBase<int>*/
+    public class Order : Base<int>
     {
         [Required]
         [StringLength(7, ErrorMessage = "Satış Numarası gereklidir!")]

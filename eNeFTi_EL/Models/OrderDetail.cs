@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace eNeFTi_EL.Models
 {
     [Table("OrderDetails")]
-    public class OrderDetail /*: TheBase<int>*/
+    public class OrderDetail : Base<int>
     {
         public int OrderId { get; set; }
         [ForeignKey("OrderId")]
