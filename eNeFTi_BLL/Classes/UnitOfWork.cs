@@ -21,11 +21,41 @@ namespace eNeFTi_BLL.Classes
             //_mapper = mapper;
             //_userManager = userManager;
             //UnitOfWork tüm repositoryleri oluşturacak.
+            AdminRepo = new AdminRepo(_myContext);
+        //    DistrictRepository = new DistrictRepository(_myContext);
+        //    DoctorRepository = new DoctorRepository(_myContext);
+        //    PatientRepository = new PatientRepository(_myContext);
+        //    HospitalRepository = new HospitalRepository(_myContext);
+        //    ClinicRepository = new ClinicRepository(_myContext);
+        //    HospitalClinicRepository = new HospitalClinicRepository(_myContext);
+        //    AppointmentRepository =
+        //        new AppointmentRepository(_myContext, _mapper, _userManager);
+        //    AppointmentHourRepository = new AppointmentHourRepository(_myContext);
+        //    DenemeRepository = new DenemeRepository(_myContext);
+        //}
 
-            
-        }
+        public  IAdminRepo AdminRepo { get; private set; }
+
+        //public IDistrictRepository DistrictRepository { get; private set; }
+
+        //public IDoctorRepository DoctorRepository { get; private set; }
+
+        //public IPatientRepository PatientRepository { get; private set; }
+
+        //public IHospitalRepository HospitalRepository { get; private set; }
+
+        //public IClinicRepository ClinicRepository { get; private set; }
+
+        //public IHospitalClinicRepository HospitalClinicRepository { get; private set; }
+
+        //public IAppointmentRepository AppointmentRepository { get; private set; }
+
+        //public IAppointmentHourRepository AppointmentHourRepository { get; private set; }
+        //public IDenemeRepository DenemeRepository { get; private set; }
+
         public void Dispose()
         {
             _myContext.Dispose();
         }
     }
+}
