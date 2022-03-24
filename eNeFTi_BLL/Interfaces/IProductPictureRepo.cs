@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace eNeFTi_BLL.Interfaces
 {
-    interface IProductPictureRepo:IRepository<ProductPicture>
+    public interface IProductPictureRepo:IRepository<ProductPicture>
     {
     }
 }
