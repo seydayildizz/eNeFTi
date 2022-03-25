@@ -1,0 +1,103 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutAccountECommerce.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h1 style="font-weight:bold">Üye Ol</h1>
+        <h3 style="color:darkgrey">Tüm alanların doldurulması zorunludur.</h3>
+        <form asp-controller="Account" asp-action="Register" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger">
+            </div>
+
+            <div class="form-group">
+                <span class="text-danger" style="font-weight:bold;margin-right:3px">
+                    *
+                </span>
+                <label asp-for="TCNumber" class="control-label"></label>
+                <input asp-for="TCNumber" class="form-control" maxlength="11" />
+                <span asp-validation-for="TCNumber" class="text-danger">
+                </span>
+
+            </div>
+
+            <div class="form-group">
+                <span class="text-danger" style="font-weight:bold;margin-right:3px">
+                    *
+                </span>
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger">
+                </span>
+
+            </div>
+
+            <div class="form-group">
+                <span class="text-danger" style="font-weight:bold;margin-right:3px">
+                    *
+                </span>
+                <label asp-for="Surname" class="control-label"></label>
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger">
+                </span>
+            </div>
+
+            <div class="form-group">
+                <span class="text-danger" style="font-weight:bold;margin-right:3px">
+                    *
+                </span>
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger">
+                </span>
+
+            </div>
+
+            <div class="form-group">
+                <span class="text-danger" style="font-weight:bold;margin-right:3px">
+                    *
+                </span>
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" class="form-control" type="date" />
+                <span asp-validation-for="BirthDate" class="text-danger">
+                </span>
+
+            </div>
+
+            <div class="form-group">
+                <span class="text-danger" style="font-weight:bold;margin-right:3px">
+                    *
+                </span>
+                <label for="Gender">Cinsiyet</label>
+                <select name="Gender" class="form-control">
+                    <option value="0" selected>Belirtilmemiş</option>
+                    <option value="1">Bay</option>
+                    <option value="2">Bayan</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <span class="text-danger" style="font-weight:bold;margin-right:3px">
+                    *
+                </span>
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" type="password" />
+                <span asp-validation-for="Password" class="text-danger">
+                </span>
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Kayıt Ol" class="btn btn-info btn-block" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        <img src="~/health-theme-assets/images/gallery-03.jpg" style="max-width: 100%; height: auto; position: fixed " />
+    </div>
+</div>

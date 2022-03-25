@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "lI72PPI5GpeD4IyCNJxUoQ6pjKvd3olcay2myFc7GVM0NsR+D52PVrMtNH5MeecTgFMSshAPYN3IFC68Q+9ZAg==",
+  "dgSpecHash": "cbeJfnDx3ziGDRrziAuDQoh60avuALgYhqldkVdCaW8CbpEYA53cj1LNsAzhFMrWYC/wdYs7dnCtfab1RdMF6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\ŞeydaZenler\\source\\repos\\eNeFTi\\eNeFTi_BLL\\eNeFTi_BLL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ŞeydaZenler\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ŞeydaZenler\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ŞeydaZenler\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
     "C:\\Users\\ŞeydaZenler\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.0\\microsoft.aspnetcore.cryptography.keyderivation.5.0.0.nupkg.sha512",

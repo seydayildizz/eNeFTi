@@ -20,6 +20,7 @@ namespace eNeFTi_BLL.Classes
             _myContext = myContext;
             //_mapper = mapper;
             //_userManager = userManager;
+
             //UnitOfWork tüm repositoryleri oluşturacak.
             AdminRepo = new AdminRepo(_myContext);
             CategoryRepo = new CategoryRepo(_myContext);
@@ -38,6 +39,16 @@ namespace eNeFTi_BLL.Classes
         public IPassiveUserRepo PassiveUserRepo { get; private set; }
         public IProductPictureRepo ProductPictureRepo { get; private set; }
         public IProductRepo ProductRepo { get; private set; }
+
+
+        public IAdminRepo IAdminRepo => throw new NotImplementedException();
+        public ICategoryRepo ICategoryRepo => throw new NotImplementedException();
+        public ICustomerRepo ICustomerRepo => throw new NotImplementedException();
+        public IOrderDetailRepo IOrderDetailRepo => throw new NotImplementedException();
+        public IOrderRepo IOrderRepo => throw new NotImplementedException();
+        public IPassiveUserRepo IPassiveUserRepo => throw new NotImplementedException();
+        public IProductPictureRepo IProductPictureRepo => throw new NotImplementedException();
+        public IProductRepo IProductRepo => throw new NotImplementedException();
         public void Dispose()
         {
             _myContext.Dispose();

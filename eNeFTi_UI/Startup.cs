@@ -1,3 +1,5 @@
+﻿using eNeFTi_BLL.Classes;
+using eNeFTi_BLL.Interfaces;
 using eNeFTi_DAL;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,12 +27,15 @@ namespace eNeFTi_UI
         public void ConfigureServices(IServiceCollection services)
         {
             {
-                //Asp .Net Core'un Connection String ba�lant�s�n� ger�ekle�tirir.
+                //Asp .Net Core'un Connection String bağlantısını gerçekleştirir.
                 //Servislerine dbcontext eklenmesi gerekir.
                 services.AddDbContext<MyContext>(options =>
                 {
                     options.UseSqlServer(Configuration.GetConnectionString("SqlConnection"));
                 });
+
+                //IUnitOfWork gördüðün zaman bana UnitOfWork nesnesi üret!
+                services.AddScoped<IUnitOfWork, UnitOfWork>();
                 services.AddControllersWithViews();
             }
         }
